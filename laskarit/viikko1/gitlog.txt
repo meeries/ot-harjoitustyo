@@ -1,0 +1,83 @@
+commit 72f3058b92a8d4e05e038e4d6fc662f24fead935
+Author: Meeri <meeri.simpanen@helsinki.fi>
+Date:   Mon Mar 21 15:17:55 2022 +0200
+
+    stuff
+
+ stuff/tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 4f71719cd20bba4d1d41a3b5b9677e71e09d7065
+Author: Meeri <meeri.simpanen@helsinki.fi>
+Date:   Mon Mar 21 15:17:32 2022 +0200
+
+    kaikkee
+
+ eka.txt    | 3 +--
+ kolmas.txt | 3 ++-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 81d10621f41232e144216708bba19dc5e0e86fe2
+Author: Meeri <meeri.simpanen@helsinki.fi>
+Date:   Mon Mar 21 15:16:01 2022 +0200
+
+    uudelleennimeys
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit e797432bfcd5c8eca6238867ec2acfe9ed023c8a
+Author: Meeri <meeri.simpanen@helsinki.fi>
+Date:   Mon Mar 21 15:15:13 2022 +0200
+
+    poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 33b487fcc7fd4ff0ee78017b350cb9c7807f408a
+Author: Meeri <meeri.simpanen@helsinki.fi>
+Date:   Mon Mar 21 15:12:37 2022 +0200
+
+    loin tarinan
+
+ tiedosto.txt | 160 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 159 insertions(+), 1 deletion(-)
+
+commit 28065845ca0f93598bec7b9fd870be49d3d23e1a
+Author: Meeri <meeri.simpanen@helsinki.fi>
+Date:   Mon Mar 21 15:05:41 2022 +0200
+
+    tokaa ja kolmatta muokkasin
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 178d110b7120a2a53c3886b5b313212bf9e15420
+Author: Meeri <meeri.simpanen@helsinki.fi>
+Date:   Mon Mar 21 15:04:47 2022 +0200
+
+    kolmas lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 959fc342d254d348e389c8f23154464a3a59634a
+Author: Meeri <meeri.simpanen@helsinki.fi>
+Date:   Mon Mar 21 15:03:23 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 0f5495ca20cd816745d49ba9a894f27dc9731a22
+Author: Meeri <meeri.simpanen@helsinki.fi>
+Date:   Mon Mar 21 15:01:20 2022 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
