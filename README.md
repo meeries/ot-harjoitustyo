@@ -12,3 +12,5 @@ jee
 [maksukortti](https://github.com/meeries/ot-harjoitustyo/tree/master/laskarit/viikko2/maksukortti)
 
 [kuva 100%:sta](https://github.com/meeries/ot-harjoitustyo/blob/master/laskarit/viikko2/kuva100.png)
+
+[vaatimusmäärittely](https://github.com/meeries/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
