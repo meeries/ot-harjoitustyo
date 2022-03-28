@@ -1,4 +1,4 @@
-# Vaatimusmäärittely
+# Alustava vaatimusmäärittely
 
 ## Sovelluksen tarkoitus
 
