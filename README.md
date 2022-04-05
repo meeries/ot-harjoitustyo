@@ -1,6 +1,6 @@
 # Budget-App
 ## Dokumentaatio
 
-- [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
-- [Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
-- [Changelog](./dokumentaatio/changelog.md)
+- [Vaatimusmäärittely](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/vaatimusmaarittely.md)
+- [Työaikakirjanpito](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/tuntikirjanpito.md)
+- [Changelog](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/changelog.md)
