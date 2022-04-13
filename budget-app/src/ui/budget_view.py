@@ -3,6 +3,7 @@ from repositories.budget_repository import Budget
 window = Tk()
 window.title("Budget-app")
 
+
 class StartScreen:
     def __init__(self, root):
         self.root = root

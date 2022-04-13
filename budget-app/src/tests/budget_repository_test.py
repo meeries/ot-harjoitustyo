@@ -1,6 +1,7 @@
 import unittest
 from repositories.budget_repository import Budget
 
+
 class TestBudget(unittest.TestCase):
     def setUp(self):
         self.budget = Budget(0)
