@@ -12,5 +12,6 @@
 - Alustava tietokannan lisääminen
 
 ## Viikko 7
+- Korjattu kirjanpidon ongelma; nyt kategoria voi olla enemmän kuin yhden sanan pituinen
 - Tietokanta lisätty
 - Uusia testejä tietokantaan liittyen
