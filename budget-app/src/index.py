@@ -1,7 +1,10 @@
-from unicodedata import category
-from repositories.budget_repository import Budget
+from services.ledger_service import LedgerService
+from db.initialize_database import initialize_database
 
-budget = Budget(0)
+initialize_database()
+
+budget = LedgerService()
+
 
 COMMANDS = {
     "x": "exit",
@@ -26,11 +29,12 @@ while True:
         print(f"wihdrawal added!")
 
     elif com == "b":
-        print(f"your current budget is: {budget.balance}")
+        print(f"your current budget is: {budget.get_balance()}")
 
     elif com == "l":
-        print(f"Your current ledger: {budget.ledger}")
+        print(f"Your current ledger: {budget.check_ledger()}")
 
     elif com == "x":
         print("Have a nice day! :)")
         break
+    
