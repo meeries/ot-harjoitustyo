@@ -16,12 +16,12 @@ while True:
     if not com in COMMANDS:
         print("Invalid command.")
     if com == "d":
-        x, y = [x for x in input("give your deposit amount and category(e.g. 100 salary): ").split()]
+        x, y = input("give your deposit amount and category(e.g. 100 salary): ").split(" ", maxsplit=1)
         budget.deposit(x, y)
         print(f"deposit added!")
 
     elif com == "w":
-        x, y=str = [x for x in input("give your withdrawal amount and category(e.g. 20 groceries): ").split()]
+        x, y = input("give your withdrawal amount and category(e.g. 20 food): ").split(" ", maxsplit=1)
         budget.withdrawal(x, y)
         print(f"wihdrawal added!")
 
