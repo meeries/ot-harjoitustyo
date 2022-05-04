@@ -6,7 +6,7 @@ class Budget:
 
     def deposit(self, amount, category):
         self.balance += int(amount)
-        self.ledger.append({"amount": int(amount), "category": category})
+        self.ledger.append({"amount": int(amount), "category": str(category)})
 
     def withdrawal(self, amount, category):
         if self.balance - int(amount) > 0:
@@ -20,9 +20,3 @@ class Budget:
 
     def check_ledger(self):
         return self.ledger
-
-if __name__ == "__main__":
-    testaaja = Budget(0)
-    testaaja.deposit(100, "salary")
-    print(testaaja.ledger)
-    print(testaaja.balance)
