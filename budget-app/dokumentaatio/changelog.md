@@ -7,3 +7,10 @@
 - Rahaa lisätessä tai poistaessa mahdollista antaa summan lisäksi kuvaus/kategoria toiminnolle
 - "Kirjanpito" toimii ja sen voi nähdä (lista lisätyistä ja poistetuista summista)
 - 3 uutta testiä; kirjanpito toimii, saldon tarkistus toimii, rahan poistoa ei voi tehdä mikäli budjetissa ei ole tarpeeksi rahaa
+
+## Viikko 5
+- Alustava tietokannan lisääminen
+
+## Viikko 7
+- Tietokanta lisätty
+- Uusia testejä tietokantaan liittyen
