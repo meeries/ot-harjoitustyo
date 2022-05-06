@@ -6,3 +6,13 @@ Sovelluksen avulla käyttäjä voi nähdä esimerkiksi kuukauden budjettinsa lis
 - [Vaatimusmäärittely](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/vaatimusmaarittely.md)
 - [Työaikakirjanpito](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/ty%C3%B6aikakirjanpito.md)
 - [Changelog](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/changelog.md)
+
+## Release
+
+## Asennus
+1. poetry install
+2. poetry run invoke start
+
+## Komentirivitoiminnot
+Testit
+Coverage
