@@ -1,4 +1,5 @@
 from db import database_connection
+from db import initialize_database
 
 class LedgerRepository:
     def __init__(self):
@@ -6,11 +7,16 @@ class LedgerRepository:
         self.cursor = self.connection.cursor()
 
     def find_all(self):
+        initialize_database.create_tables_if_not_exists
         return self.cursor.execute('select * from ledger').fetchall()
 
     def add_transaction(self, amount, category):
+        initialize_database.create_tables_if_not_exists
         self.cursor.execute('insert into ledger values (?,?,?)', (None, amount, category))
         self.connection.commit()
     
     def get_balance(self):
         return self.cursor.execute('select sum(amount) from ledger').fetchone()
+
+    def delete_db(self):
+        self.cursor.execute('drop table if exists ledger')
