@@ -14,9 +14,40 @@ Sovelluksen avulla käyttäjä voi nähdä esimerkiksi kuukauden budjettinsa lis
 release
 
 ## Asennus
-1. poetry install
-2. poetry run invoke start
+1. Komento:
+```bash
+poetry install
+```
+asentaa riippuvuudet
+
+2. Komento:
+```bash
+poetry run invoke start
+```
+käynnistää sovelluksen
 
 ## Komentirivitoiminnot
-Testit
-Coverage
+Komento:
+```bash
+poetry run invoke start
+```
+suorittaa ohjelman
+
+Komento:
+```bash
+poetry run invoke test
+```
+suorittaa testit
+
+Komento:
+```bash
+poetry run invoke coverage-report
+```
+luo testikattavuusraportin
+
+Komento:
+
+```bash
+poetry run invoke lint
+```
+suorittaa pylint tarkastukset
