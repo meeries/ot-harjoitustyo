@@ -6,4 +6,10 @@
 | 7.4.  | 2    | lisää toiminnallisuutta, uusia testejä |
 | 15.4. | 3    | muutaman ongelman korjaus, yritys saada tietokanta toimimaan |
 | 4.5.  | 5    | tietokannan lisääminen, dokumentaation päivitys |
-| yht.  | 16   |   | 
+| 6.5.  | 2    | tietokantaan liittyvien bugien korjaus |
+| 7.5.  | 1    | testien päivitys |
+| 8.5.  | 3    | lisää päivityksiä dokumentaatioon |
+| 9.5.  | -    | - |
+| 10.5. | -    | - |
+| 11.5. | -    | - |
+| yht.  | 21   |  | 
