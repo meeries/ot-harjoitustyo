@@ -29,10 +29,3 @@ class LedgerService:
 
     def delete_database(self):
         self.ledger_repository.delete_db()
-
-    #def delete_database(connection):
-    #    cursor = connection.cursor()
-    #    cursor.execute('''
-    #        drop table ledger;
-    #        ''')
-    #    connection.commit()

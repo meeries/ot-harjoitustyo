@@ -1,10 +1,12 @@
 import unittest
 from services.ledger_service import LedgerService
+from db import initialize_database
 
-
-class TestBudget(unittest.TestCase):
+class TestLedgerService(unittest.TestCase):
     def setUp(self):
+        initialize_database.initialize_database()
         self.budget = LedgerService()
+        self.budget.delete_database()
 
     def test_deposit_works(self):
         self.budget.deposit(1000, "Salary")

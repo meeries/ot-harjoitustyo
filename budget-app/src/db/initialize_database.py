@@ -17,10 +17,3 @@ def create_tables_if_not_exists(connection):
 def initialize_database():
     connection = database_connection.get_database_connection()
     create_tables_if_not_exists(connection)
-
-#def delete_database(connection):
-#    cursor = connection.cursor()
-#    cursor.execute('''
-#        drop table ledger;
-#        ''')
-#    connection.commit()

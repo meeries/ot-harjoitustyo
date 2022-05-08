@@ -7,11 +7,11 @@ class LedgerRepository:
         self.cursor = self.connection.cursor()
 
     def find_all(self):
-        initialize_database.create_tables_if_not_exists
+        initialize_database.initialize_database()
         return self.cursor.execute('select * from ledger').fetchall()
 
     def add_transaction(self, amount, category):
-        initialize_database.create_tables_if_not_exists
+        initialize_database.initialize_database()
         self.cursor.execute('insert into ledger values (?,?,?)', (None, amount, category))
         self.connection.commit()
     
