@@ -2,7 +2,7 @@
 
 ## Rakenne
 
-kuva
+![Pakkausrakenne](./uml.png)
 
 ## Sovelluslogiikka
 
