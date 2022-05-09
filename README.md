@@ -8,7 +8,7 @@ Sovelluksen avulla käyttäjä voi nähdä esimerkiksi kuukauden budjettinsa lis
 - [Changelog](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/changelog.md)
 - [Käyttöohje](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/kayttoohje.md)
 - [Testausdokumentti]
-- [Arkkitehtuurikuvaus]
+- [Arkkitehtuurikuvaus](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/arkkitehtuuri.md)
 
 ## Release
 release
