@@ -8,8 +8,8 @@
 | 4.5.  | 5    | tietokannan lisääminen, dokumentaation päivitys |
 | 6.5.  | 2    | tietokantaan liittyvien bugien korjaus |
 | 7.5.  | 1    | testien päivitys |
-| 8.5.  | 3    | lisää päivityksiä dokumentaatioon |
-| 9.5.  | -    | - |
+| 8.5.  | 2    | lisää päivityksiä dokumentaatioon, graafisen käyttöliittymän aloitus |
+| 9.5.  | 5    | Graafisen käyttöliittymän tekoa, docstring, käyttöohjeet  |
 | 10.5. | -    | - |
 | 11.5. | -    | - |
 | yht.  | 21   |  | 
