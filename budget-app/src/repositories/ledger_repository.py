@@ -27,6 +27,7 @@ class LedgerRepository:
         self.connection.commit()
 
     def get_balance(self):
+        initialize_database.initialize_database()
         """Palauttaa tämänhetkisen budjetin
         Returns:
             Palauttaa luvun, joka vastaa sen hetkistä budjettia
