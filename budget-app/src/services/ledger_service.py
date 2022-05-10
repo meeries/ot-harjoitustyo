@@ -14,7 +14,6 @@ class LedgerService:
         """
         if int(amount) >= 0:
             self.ledger_repository.add_transaction(amount, description)
-            print("Deposit added!")
         else:
             print("Please insert a positive number")
 
@@ -23,9 +22,8 @@ class LedgerService:
         Varmistaa, että annettu summa ei ole negatiivinen, ja että budjetissa on varaa nostaa summa.
         """
         if int(amount) >= 0:
-            if self.get_balance() - int(amount) > 0:
+            if self.ledger_repository.get_balance()[0] - int(amount) > 0:
                 self.ledger_repository.add_transaction(-int(amount), description)
-                print("Withdrawal added!")
             else:
                 print("Not enough balance for withdrawal.")
         else:

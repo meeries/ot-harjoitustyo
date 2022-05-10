@@ -1,4 +1,4 @@
-from tkinter import Tk, ttk, constants
+from tkinter import Tk, ttk, constants, messagebox
 from db.initialize_database import initialize_database
 from repositories.ledger_repository import LedgerRepository
 from services.ledger_service import LedgerService
@@ -14,10 +14,10 @@ class StartView:
         initialize_database()
         self.ledger_repository = LedgerRepository()
         label = ttk.Label(master=self._root, text="Welcome to Budget-App! :) \n \n Choose command:")
-        d_label = ttk.Label(master=self._root, text="Add deposit amount and description (e.g. 100 salary:")
+        d_label = ttk.Label(master=self._root, text="Add deposit amount and description separated by a comma (e.g. 100, salary):")
         self.d_entry = ttk.Entry(master=self._root)
         d_button = ttk.Button(master=self._root, text="Add deposit", command=self._d_click_handler)
-        w_label = ttk.Label(master=self._root, text="Add withdrawal amount and description (e.g. 20 food:")
+        w_label = ttk.Label(master=self._root, text="Add withdrawal amount and description (e.g. 20 food):")
         self.w_entry = ttk.Entry(master=self._root)
         w_button = ttk.Button(master=self._root, text="Add withdrawal", command=self._w_click_handler)
 
@@ -41,25 +41,30 @@ class StartView:
         self._root.grid_columnconfigure(1, weight=1)
 
     def _l_click_handler(self):
-        print(LedgerService.check_ledger(self))
+        a = LedgerService.check_ledger(self)
+        text = f"Your current ledger: {a}"
+        messagebox.showinfo(" ", text)
 
     def _b_click_handler(self):
-        print(LedgerService.get_balance(self))
+        b = LedgerService.get_balance(self)
+        text = f"Your current budget is: {b}"
+        messagebox.showinfo(" ", text)
 
     def _d_click_handler(self):
         value = self.d_entry.get()
-        x, y = value.split(" ", maxsplit=1)
+        x, y = value.split(",", maxsplit=1)
         LedgerService.deposit(self, x, y)
+        messagebox.showinfo(" ", "Deposit added!")
 
     def _w_click_handler(self):
         value = self.w_entry.get()
-        x, y = value.split(" ", maxsplit=1)
+        x, y = value.split(",", maxsplit=1)
         LedgerService.withdrawal(self, x, y)
+        messagebox.showinfo(" ", "Withdrawal added!")
 
     def _r_click_handler(self):
         LedgerService.delete_database(self)
-        print("Reset complete!")
+        messagebox.showinfo(" ", "Reset complete!")
 
     def _x_click_handler(self):
         pass
-    
