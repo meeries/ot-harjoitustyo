@@ -591,3 +591,4 @@ min-public-methods=0
 # "BaseException, Exception".
 overgeneral-exceptions=BaseException,
                        Exception
+
