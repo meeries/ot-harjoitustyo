@@ -38,4 +38,3 @@ class LedgerRepository:
         """Poistaa tämänhetkisen tietokannan
         """
         self.cursor.execute('drop table if exists ledger')
-        

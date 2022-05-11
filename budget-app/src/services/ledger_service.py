@@ -1,22 +1,32 @@
 from repositories.ledger_repository import LedgerRepository
 
 class LedgerService:
-    """Luokka, joka vastaa sovelluslogiikasta
+    """Luokka, joka vastaa sovelluslogiikasta.
     """
     def __init__(self):
-        """Luokan konstruktori
+        """Luokan konstruktori.
         """
         self.ledger_repository = LedgerRepository()
+
+    def is_it_a_number(self, amount):
+        """Varmistaa, että annettu summa on numero.
+        """
+        try:
+            amount = int(amount)
+            return True
+        except ValueError:
+            return False
 
     def deposit(self, amount, description):
         """Lisää kirjanpitoon talletuksen; summan ja kuvauksen talletukselle.
         Varmistaa, että annettu summa ei ole negatiivinen.
         """
-        if int(amount) >= 0:
+        if int(amount) > 0:
             self.ledger_repository.add_transaction(amount, description)
+            return True
         else:
-            print("Please insert a positive number")
-
+            return False
+        
     def withdrawal(self, amount, description):
         """Lisää kirjanpitoon noston; summan ja kuvauksen nostolle.
         Varmistaa, että annettu summa ei ole negatiivinen, ja että budjetissa on varaa nostaa summa.
@@ -25,7 +35,7 @@ class LedgerService:
             if self.ledger_repository.get_balance()[0] - int(amount) > 0:
                 self.ledger_repository.add_transaction(-int(amount), description)
         else:
-            print("Please insert a positive number")
+            return False
 
     def get_balance(self):
         """Kutsuu ledger-repositorion tämänhetkisen budjetin palauttavaa metodia

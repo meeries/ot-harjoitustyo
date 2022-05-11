@@ -17,10 +17,10 @@ class StartView:
         initialize_database()
         self.ledger_repository = LedgerRepository()
         label = ttk.Label(master=self._root, text="Welcome to Budget-App! :) \n \n Choose command:")
-        d_label = ttk.Label(master=self._root, text="Add deposit amount and description separated by a comma (e.g. 100, salary):")
+        d_label = ttk.Label(master=self._root, text="Add deposit amount and description separated by a comma or a space (e.g. 100, salary):")
         self.d_entry = ttk.Entry(master=self._root)
         d_button = ttk.Button(master=self._root, text="Add deposit", command=self._d_click_handler)
-        w_label = ttk.Label(master=self._root, text="Add withdrawal amount and description (e.g. 20 food):")
+        w_label = ttk.Label(master=self._root, text="Add withdrawal amount and description separated by a comma or a space (e.g. 20 food):")
         self.w_entry = ttk.Entry(master=self._root)
         w_button = ttk.Button(master=self._root, text="Add withdrawal", command=self._w_click_handler)
 
@@ -56,25 +56,41 @@ class StartView:
         messagebox.showinfo(" ", text)
 
     def _d_click_handler(self):
-        """Jakaa annetun arvon summaan ja sen kuvaukseen välilyönnistä tai pilkusta. Kutsuu serviceä joka lisää talletuksen budjettiin ja kirjanpitoon.
-        Näyttää varmistusviestin.
+        """Jakaa annetun arvon summaan ja sen kuvaukseen välilyönnistä tai pilkusta.
+        Kutsuu serviceä joka varmistaa, että summa on numero, varmistaa, että se on positiivinen ja lisää talletuksen budjettiin ja kirjanpitoon.
+        Näyttää varmistusviestin tai tarvittaessa varoitusviestin.
+        (Oli pakko lisätä tämä sovelluslogiikan pätkä käyttöliittymään, koska se ei muuten toiminut.)
         """
         value = self.d_entry.get()
         x, y = re.split("\s|,", value, maxsplit=1)
-        LedgerService.deposit(self, x, y)
-        messagebox.showinfo(" ", "Deposit added!")
+        if LedgerService.is_it_a_number(self,x) is False:
+            messagebox.showerror(" ", "Add amount as a number.")
+        else:
+            if int(x) > 0:
+                LedgerService.deposit(self, x, y)
+                messagebox.showinfo(" ", "Deposit added!")
+            else:
+                messagebox.showerror(" ", "Please insert a positive number")
 
     def _w_click_handler(self):
-        """Varmistaa, että budjetissa on rahaa nostoon. Jos on, niin kutsuu serviceä joka lisää noston budjettiin ja kirjanpitoon.
-        Näyttää varmistusviestin
+        """Kutsuu serviceä joka varmistaa, että summa on numero, varmistaa, että se on positiivinen ja että
+        budjetissa on riittävästi rahaa nostoon. Jos on, lisää noston budjettiin ja kirjanpitoon.
+        Näyttää varmistusviestin tai varoitusviestin.
+        (Oli pakko lisätä tämä sovelluslogiikan pätkä käyttöliittymään, koska se ei muuten toiminut.)
         """
         value = self.w_entry.get()
         x, y = re.split("\s|,", value, maxsplit=1)
-        if LedgerService.get_balance(self) - int(x) > 0:
-            LedgerService.withdrawal(self, x, y)
-            messagebox.showinfo(" ", "Withdrawal added!")
+        if LedgerService.is_it_a_number(self,x) is False:
+            messagebox.showerror(" ", "Add amount as a number.")
         else:
-            messagebox.showerror(" ", "Not enough balance for withdrawal.")
+            if int(x) > 0:
+                if LedgerService.get_balance(self) - int(x) > 0:
+                    LedgerService.withdrawal(self, x, y)
+                    messagebox.showinfo(" ", "Withdrawal added!")
+                else:
+                    messagebox.showerror(" ", "Not enough balance for withdrawal.")
+            else:
+                messagebox.showerror(" ", "Please insert a positive number")
 
     def _r_click_handler(self):
         """"Kutsuu servicen tietokannan tyhjentävää metodia ja näyttää varmistusviestin.
