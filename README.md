@@ -7,7 +7,7 @@ Sovelluksen avulla käyttäjä voi nähdä esimerkiksi kuukauden budjettinsa lis
 - [Työaikakirjanpito](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/ty%C3%B6aikakirjanpito.md)
 - [Changelog](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/changelog.md)
 - [Käyttöohje](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/kayttoohje.md)
-- [Testausdokumentti]
+- [Testausdokumentti](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/testausdokumentti.md)
 - [Arkkitehtuurikuvaus](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/arkkitehtuuri.md)
 
 ## Release
