@@ -10,6 +10,6 @@
 | 7.5.  | 1    | testien päivitys |
 | 8.5.  | 2    | lisää päivityksiä dokumentaatioon, graafisen käyttöliittymän aloitus |
 | 9.5.  | 5    | Graafisen käyttöliittymän tekoa, docstring, käyttöohjeet  |
-| 10.5. | -    | - |
-| 11.5. | -    | - |
-| yht.  | 21   |  | 
+| 10.5. | 3    | Uusia testejä |
+| 11.5. | 2    | Dokumentaation ja ohjelman viimeistelyä |
+| yht.  | 31   |  | 
