@@ -16,16 +16,16 @@ poetry run invoke start
 # Ohjelman käyttö
 
 ## Talletuksen lisääminen
-Kirjoita tekstikenttään haluamasi summa ja sen kuvaus muodossa "summa kuvaus", esimerkiksi
+Kirjoita tekstikenttään haluamasi summa ja sen kuvaus pilkulla tai välilyönnillä erotettuna, esimerkiksi
 ```bash
 1000 gift
 ```
 ja klikkaa "Add deposit"
 
 ## Noston lisääminen
-Kirjoita tekstikenttään haluamasi summa ja sen kuvaus muodossa "summa kuvaus", esimerkiksi
+Kirjoita tekstikenttään haluamasi summa ja sen kuvaus pilkulla tai välilyönnillä erotettuna, esimerkiksi
 ```bash
-10 food
+10, food
 ```
 ja klikkaa "Add withdrawal"
 
