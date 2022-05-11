@@ -1,4 +1,4 @@
-# Alustava vaatimusmäärittely
+# Vaatimusmäärittely
 
 ## Sovelluksen tarkoitus
 
@@ -7,9 +7,14 @@ Käyttäjä voi lisätä sovellukseen tulonsa ja menonsa, ja näin määrittää
 
 ## Perusversio
 
-- Käyttäjä voi lisätä uusia tuloja tai menoja
+- Käyttäjä voi lisätä uusia tuloja
+  - Ilmoitus, jos lisäys onnistuu
   - Negatiivisesta syötteestä virheilmoitus
-  - Ilmoitus, mikäli käyttäjän menot menevät yli budjetin
+  - Virheilmoitus, jos syötteen summaosa ei ole numero
+- Käyttäjä voi lisätä uusia menoja
+  - Ilmoitus, jos lisäys onnistuu
+  - Negatiivisesta syötteestä virheilmoitus
+  - Virheilmoitus, jos syötteen summaosa ei ole numero
 - Käyttäjä näkee tulonsa, menonsa ja kuukausibudjettinsa
 
 ## Jatkomahdollisuuksia
