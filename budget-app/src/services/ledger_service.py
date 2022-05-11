@@ -24,9 +24,8 @@ class LedgerService:
         if int(amount) > 0:
             self.ledger_repository.add_transaction(amount, description)
             return True
-        else:
-            return False
-        
+        return False
+
     def withdrawal(self, amount, description):
         """Lisää kirjanpitoon noston; summan ja kuvauksen nostolle.
         Varmistaa, että annettu summa ei ole negatiivinen, ja että budjetissa on varaa nostaa summa.
@@ -34,8 +33,7 @@ class LedgerService:
         if int(amount) >= 0:
             if self.ledger_repository.get_balance()[0] - int(amount) > 0:
                 self.ledger_repository.add_transaction(-int(amount), description)
-        else:
-            return False
+        return False
 
     def get_balance(self):
         """Kutsuu ledger-repositorion tämänhetkisen budjetin palauttavaa metodia
