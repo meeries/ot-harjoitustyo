@@ -11,7 +11,7 @@ Sovelluksen avulla käyttäjä voi nähdä esimerkiksi kuukauden budjettinsa lis
 - [Arkkitehtuurikuvaus](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/arkkitehtuuri.md)
 
 ## Release
-release
+[Loppupalautus](https://github.com/meeries/ot-harjoitustyo/releases/tag/loppupalautus)
 
 ## Asennus
 1. Komento:
