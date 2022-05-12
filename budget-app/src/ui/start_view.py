@@ -1,5 +1,4 @@
 from tkinter import Tk, ttk, constants, messagebox
-from db.initialize_database import initialize_database
 from repositories.ledger_repository import LedgerRepository
 from services.ledger_service import LedgerService
 import re
@@ -14,7 +13,6 @@ class StartView:
     def start(self):
         """Lisää ikkunan ja näyttää siinä tarvittavat napit ja labelit jne.
         """
-        initialize_database()
         self.ledger_repository = LedgerRepository()
         label = ttk.Label(master=self._root, text="Welcome to Budget-App! :) \n \n Choose command:")
         d_label = ttk.Label(master=self._root, text="Add deposit amount and description separated by a comma or a space (e.g. 100, salary):")
