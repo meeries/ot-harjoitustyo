@@ -1,3 +1,4 @@
+Lataa projektin [release](https://github.com/meeries/ot-harjoitustyo/releases/tag/loppupalautus).
 
 # Ohjelman käynnistäminen
 
