@@ -1,5 +1,5 @@
 import sqlite3
-from config import database_file_path
+from db.config import database_file_path
 
 connection = sqlite3.connect(database_file_path)
 connection.row_factory = sqlite3.Row
