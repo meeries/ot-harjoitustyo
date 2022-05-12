@@ -10,7 +10,14 @@ def create_tables_if_not_exists(connection):
             description text
         );
     ''')
+    connection.commit()
 
+def drop_tables(connection):
+    cursor = connection.cursor()
+
+    cursor.execute('''
+        drop table if exists ledger;
+        ''')
     connection.commit()
 
 def initialize_database():
