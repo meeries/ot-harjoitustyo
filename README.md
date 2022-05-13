@@ -11,7 +11,7 @@ Sovelluksen avulla käyttäjä voi nähdä esimerkiksi kuukauden budjettinsa lis
 - [Arkkitehtuurikuvaus](https://github.com/meeries/ot-harjoitustyo/blob/master/budget-app/dokumentaatio/arkkitehtuuri.md)
 
 ## Release
-[Loppupalautus](https://github.com/meeries/ot-harjoitustyo/releases/tag/loppupalautus)
+[Loppupalautus](https://github.com/meeries/ot-harjoitustyo/releases/tag/Budget-App)
 
 ## Asennus
 1. Komento:
@@ -21,6 +21,12 @@ poetry install
 asentaa riippuvuudet
 
 2. Komento:
+```bash
+poetry run invoke build
+```
+alustaa tietokannat
+
+3. Komento:
 ```bash
 poetry run invoke start
 ```
@@ -32,6 +38,12 @@ Komento:
 poetry run invoke start
 ```
 suorittaa ohjelman
+
+Komento:
+```bash
+poetry run invoke build
+```
+alustaa tietokannan
 
 Komento:
 ```bash
