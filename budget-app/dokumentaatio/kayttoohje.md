@@ -1,4 +1,4 @@
-Lataa projektin [release](https://github.com/meeries/ot-harjoitustyo/releases/tag/loppupalautus).
+Lataa projektin [release](https://github.com/meeries/ot-harjoitustyo/releases/tag/Budget-App).
 
 # Ohjelman käynnistäminen
 
